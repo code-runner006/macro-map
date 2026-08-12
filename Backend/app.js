@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
-// Middleware
 app.use(
   cors({
     origin: "http://localhost:5173",
@@ -14,7 +14,8 @@ app.use(
 app.use(express.json());
 app.use(cookieParser());
 
-// Test route
+app.use("/api/auth", authRoutes);
+
 app.get("/", (req, res) => {
   res.json({ message: "MacroMap API is running" });
 });
