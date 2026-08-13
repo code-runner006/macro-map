@@ -79,4 +79,19 @@ const login = async (req, res) => {
   createSendToken(user, 200, res);
 };
 
-module.exports = { signup, login };
+const logout = async (req, res) => {
+  res.cookie("jwt", "loggedout", {
+    httpOnly: true,
+    maxAge: 1000,
+  });
+
+  res.status(200).json({ message: "Logged out successfully" });
+};
+
+const getMe = async (req, res) => {
+  res.status(200).json({
+    user: req.user,
+  });
+};
+
+module.exports = { signup, login, logout, getMe };
