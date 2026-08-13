@@ -1,5 +1,26 @@
 const User = require("../models/User");
 const calculateBMI = require("../utils/bmiCalculator");
+const jwt = require("jsonwebtoken");
+
+const createSendToken = (user, statusCode, res) => {
+  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_EXPIRES_IN,
+  });
+
+  res.cookie("jwt", token, {
+    httpOnly: true,
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+  });
+
+  res.status(statusCode).json({
+    message: "Success",
+    user: {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+    },
+  });
+};
 
 const signup = async (req, res) => {
   const {
@@ -33,14 +54,29 @@ const signup = async (req, res) => {
     activityLevel,
   });
 
-  res.status(201).json({
-    message: "Account created successfully",
-    user: {
-      id: user._id,
-      name: user.name,
-      email: user.email,
-    },
-  });
+  createSendToken(user, 201, res);
 };
 
-module.exports = { signup };
+const login = async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res
+      .status(400)
+      .json({ message: "Please provide email and password" });
+  }
+
+  const user = await User.findOne({ email });
+  if (!user) {
+    return res.status(401).json({ message: "Invalid email or password" });
+  }
+
+  const isPasswordCorrect = await user.comparePassword(password);
+  if (!isPasswordCorrect) {
+    return res.status(401).json({ message: "Invalid email or password" });
+  }
+
+  createSendToken(user, 200, res);
+};
+
+module.exports = { signup, login };
