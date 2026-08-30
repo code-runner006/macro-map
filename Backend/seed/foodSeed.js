@@ -15,6 +15,8 @@ const foods = [
     protein: 31,
     carbs: 0,
     fat: 3.6,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Chicken Thigh / Murgi ki Ran",
@@ -25,6 +27,8 @@ const foods = [
     protein: 26,
     carbs: 0,
     fat: 11,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Chicken Curry / Murgi ka Salan",
@@ -35,6 +39,8 @@ const foods = [
     protein: 16,
     carbs: 4,
     fat: 13,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Chicken Tikka / Chicken Tikka",
@@ -45,6 +51,8 @@ const foods = [
     protein: 22,
     carbs: 1,
     fat: 8,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Beef Mince / Keema",
@@ -55,6 +63,8 @@ const foods = [
     protein: 26,
     carbs: 0,
     fat: 17,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Seekh Kebab / Seekh Kebab",
@@ -65,6 +75,8 @@ const foods = [
     protein: 20,
     carbs: 2,
     fat: 14,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Mutton / Gosht",
@@ -75,6 +87,8 @@ const foods = [
     protein: 25,
     carbs: 0,
     fat: 21,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Nihari / Nihari",
@@ -85,6 +99,8 @@ const foods = [
     protein: 18,
     carbs: 3,
     fat: 20,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Fish / Machli",
@@ -95,6 +111,8 @@ const foods = [
     protein: 20,
     carbs: 0,
     fat: 5,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
 
   // ─── Eggs & Dairy ─────────────────────────────────────────────────
@@ -107,6 +125,8 @@ const foods = [
     protein: 6,
     carbs: 0.6,
     fat: 5,
+    maxDailyQuantity: 6,
+    maxPerMealQuantity: 3,
   },
   {
     name: "Egg White / Anda Safedi",
@@ -117,6 +137,8 @@ const foods = [
     protein: 3.6,
     carbs: 0.2,
     fat: 0,
+    maxDailyQuantity: 10,
+    maxPerMealQuantity: 5,
   },
   {
     name: "Milk / Doodh",
@@ -127,6 +149,8 @@ const foods = [
     protein: 6.4,
     carbs: 9.4,
     fat: 6.6,
+    maxDailyQuantity: 600,
+    maxPerMealQuantity: 400,
   },
   {
     name: "Yogurt / Dahi",
@@ -137,6 +161,8 @@ const foods = [
     protein: 3.5,
     carbs: 4.7,
     fat: 3.3,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Cheddar Cheese / Cheese",
@@ -147,6 +173,8 @@ const foods = [
     protein: 7,
     carbs: 0.4,
     fat: 10,
+    maxDailyQuantity: 90,
+    maxPerMealQuantity: 60,
   },
 
   // ─── Grains & Bread ───────────────────────────────────────────────
@@ -159,6 +187,8 @@ const foods = [
     protein: 2.7,
     carbs: 28,
     fat: 0.3,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Brown Rice / Brown Chawal",
@@ -169,6 +199,8 @@ const foods = [
     protein: 2.6,
     carbs: 23,
     fat: 0.9,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Chapati / Roti",
@@ -179,6 +211,8 @@ const foods = [
     protein: 2.5,
     carbs: 13,
     fat: 1.5,
+    maxDailyQuantity: 8,
+    maxPerMealQuantity: 3,
   },
   {
     name: "Whole Wheat Roti / Atta Roti",
@@ -189,6 +223,8 @@ const foods = [
     protein: 3.5,
     carbs: 17,
     fat: 1.5,
+    maxDailyQuantity: 8,
+    maxPerMealQuantity: 3,
   },
   {
     name: "Plain Paratha / Paratha",
@@ -199,6 +235,8 @@ const foods = [
     protein: 5,
     carbs: 36,
     fat: 11,
+    maxDailyQuantity: 4,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Aloo Paratha / Aloo Paratha",
@@ -209,6 +247,8 @@ const foods = [
     protein: 6,
     carbs: 42,
     fat: 16,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Plain Naan / Naan",
@@ -219,6 +259,8 @@ const foods = [
     protein: 9,
     carbs: 50,
     fat: 3,
+    maxDailyQuantity: 4,
+    maxPerMealQuantity: 2,
   },
   {
     name: "White Bread / Safed Bread",
@@ -229,6 +271,8 @@ const foods = [
     protein: 2.7,
     carbs: 15,
     fat: 1,
+    maxDailyQuantity: 6,
+    maxPerMealQuantity: 3,
   },
   {
     name: "Brown Bread / Brown Bread",
@@ -239,6 +283,8 @@ const foods = [
     protein: 3,
     carbs: 12,
     fat: 1,
+    maxDailyQuantity: 6,
+    maxPerMealQuantity: 3,
   },
 
   // ─── Dals & Legumes ───────────────────────────────────────────────
@@ -251,6 +297,8 @@ const foods = [
     protein: 9,
     carbs: 20,
     fat: 0.4,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Split Chickpea Lentils / Daal Chana",
@@ -261,6 +309,8 @@ const foods = [
     protein: 9,
     carbs: 27,
     fat: 2.6,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Yellow Lentils / Daal Moong",
@@ -271,6 +321,8 @@ const foods = [
     protein: 7,
     carbs: 18,
     fat: 0.4,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "White Lentils / Daal Mash",
@@ -281,6 +333,8 @@ const foods = [
     protein: 9,
     carbs: 22,
     fat: 0.5,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Chickpeas / Chanay",
@@ -291,6 +345,8 @@ const foods = [
     protein: 8.9,
     carbs: 27,
     fat: 2.6,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Kidney Beans / Rajma",
@@ -301,6 +357,8 @@ const foods = [
     protein: 8.7,
     carbs: 22,
     fat: 0.5,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Black Eye Peas / Lobia",
@@ -311,6 +369,8 @@ const foods = [
     protein: 7.7,
     carbs: 21,
     fat: 0.5,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Haleem / Haleem",
@@ -321,6 +381,8 @@ const foods = [
     protein: 14,
     carbs: 15,
     fat: 9,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
 
   // ─── Vegetables ───────────────────────────────────────────────────
@@ -333,6 +395,8 @@ const foods = [
     protein: 2,
     carbs: 17,
     fat: 0.1,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Spinach / Palak",
@@ -343,6 +407,8 @@ const foods = [
     protein: 2.9,
     carbs: 3.6,
     fat: 0.4,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Tomato / Tamatar",
@@ -353,6 +419,8 @@ const foods = [
     protein: 0.9,
     carbs: 3.9,
     fat: 0.2,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Onion / Pyaz",
@@ -363,6 +431,8 @@ const foods = [
     protein: 1.1,
     carbs: 9.3,
     fat: 0.1,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Carrot / Gajar",
@@ -373,6 +443,8 @@ const foods = [
     protein: 0.9,
     carbs: 10,
     fat: 0.2,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Cauliflower / Gobhi",
@@ -383,6 +455,8 @@ const foods = [
     protein: 2,
     carbs: 5,
     fat: 0.3,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Eggplant / Baingan",
@@ -393,6 +467,8 @@ const foods = [
     protein: 1,
     carbs: 6,
     fat: 0.2,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Okra / Bhindi",
@@ -403,6 +479,8 @@ const foods = [
     protein: 2,
     carbs: 7,
     fat: 0.2,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Cucumber / Kheera",
@@ -413,6 +491,8 @@ const foods = [
     protein: 0.7,
     carbs: 3.6,
     fat: 0.1,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
   {
     name: "Fenugreek Leaves / Methi",
@@ -423,6 +503,8 @@ const foods = [
     protein: 4.4,
     carbs: 6,
     fat: 1,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Zucchini / Tori",
@@ -433,6 +515,8 @@ const foods = [
     protein: 1.2,
     carbs: 3.1,
     fat: 0.3,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Bitter Gourd / Karela",
@@ -443,6 +527,8 @@ const foods = [
     protein: 1,
     carbs: 3.7,
     fat: 0.2,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Peas / Matar",
@@ -453,6 +539,8 @@ const foods = [
     protein: 5.4,
     carbs: 14,
     fat: 0.4,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
 
   // ─── Fruits ───────────────────────────────────────────────────────
@@ -465,6 +553,8 @@ const foods = [
     protein: 1.1,
     carbs: 23,
     fat: 0.3,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Apple / Seb",
@@ -475,6 +565,8 @@ const foods = [
     protein: 0.5,
     carbs: 25,
     fat: 0.3,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Mango / Aam",
@@ -485,6 +577,8 @@ const foods = [
     protein: 0.8,
     carbs: 15,
     fat: 0.4,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Orange / Narangi",
@@ -495,6 +589,8 @@ const foods = [
     protein: 1.2,
     carbs: 15,
     fat: 0.2,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Pomegranate / Anaar",
@@ -505,6 +601,8 @@ const foods = [
     protein: 1.7,
     carbs: 19,
     fat: 1.2,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Papaya / Papita",
@@ -515,6 +613,8 @@ const foods = [
     protein: 0.5,
     carbs: 11,
     fat: 0.3,
+    maxDailyQuantity: 300,
+    maxPerMealQuantity: 150,
   },
   {
     name: "Grapes / Angoor",
@@ -525,6 +625,8 @@ const foods = [
     protein: 0.7,
     carbs: 18,
     fat: 0.2,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Guava / Amrood",
@@ -535,6 +637,8 @@ const foods = [
     protein: 1.4,
     carbs: 8,
     fat: 0.5,
+    maxDailyQuantity: 4,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Watermelon / Tarboz",
@@ -545,6 +649,8 @@ const foods = [
     protein: 0.6,
     carbs: 7.6,
     fat: 0.2,
+    maxDailyQuantity: 400,
+    maxPerMealQuantity: 200,
   },
 
   // ─── Oils & Fats ──────────────────────────────────────────────────
@@ -557,6 +663,8 @@ const foods = [
     protein: 0,
     carbs: 0,
     fat: 14,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 1,
   },
   {
     name: "Desi Ghee / Desi Ghee",
@@ -567,6 +675,8 @@ const foods = [
     protein: 0,
     carbs: 0,
     fat: 13,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 1,
   },
   {
     name: "Butter / Makhan",
@@ -577,6 +687,8 @@ const foods = [
     protein: 0.1,
     carbs: 0,
     fat: 11.5,
+    maxDailyQuantity: 3,
+    maxPerMealQuantity: 1,
   },
 
   // ─── Breakfast & Snacks ───────────────────────────────────────────
@@ -589,6 +701,8 @@ const foods = [
     protein: 17,
     carbs: 66,
     fat: 7,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Peanut Butter / Moongphali ka Makhan",
@@ -599,6 +713,8 @@ const foods = [
     protein: 8,
     carbs: 6,
     fat: 16,
+    maxDailyQuantity: 6,
+    maxPerMealQuantity: 4,
   },
   {
     name: "Almonds / Badam",
@@ -609,6 +725,8 @@ const foods = [
     protein: 6,
     carbs: 6,
     fat: 15,
+    maxDailyQuantity: 60,
+    maxPerMealQuantity: 30,
   },
   {
     name: "Walnuts / Akhrot",
@@ -619,6 +737,8 @@ const foods = [
     protein: 4.6,
     carbs: 4.1,
     fat: 19.6,
+    maxDailyQuantity: 60,
+    maxPerMealQuantity: 30,
   },
   {
     name: "Samosa / Samosa",
@@ -629,6 +749,8 @@ const foods = [
     protein: 5,
     carbs: 15,
     fat: 9,
+    maxDailyQuantity: 4,
+    maxPerMealQuantity: 2,
   },
   {
     name: "Pakora / Pakora",
@@ -639,6 +761,8 @@ const foods = [
     protein: 5,
     carbs: 25,
     fat: 15,
+    maxDailyQuantity: 200,
+    maxPerMealQuantity: 100,
   },
   {
     name: "Cornflakes / Cornflakes",
@@ -649,6 +773,8 @@ const foods = [
     protein: 2.4,
     carbs: 25,
     fat: 0.3,
+    maxDailyQuantity: 90,
+    maxPerMealQuantity: 60,
   },
 
   // ─── Drinks & Beverages ───────────────────────────────────────────
@@ -661,6 +787,8 @@ const foods = [
     protein: 3.2,
     carbs: 8,
     fat: 5,
+    maxDailyQuantity: 600,
+    maxPerMealQuantity: 400,
   },
   {
     name: "Black Tea / Kali Chai",
@@ -671,6 +799,8 @@ const foods = [
     protein: 0,
     carbs: 0.5,
     fat: 0,
+    maxDailyQuantity: 800,
+    maxPerMealQuantity: 400,
   },
   {
     name: "Green Tea / Sabz Chai",
@@ -681,6 +811,8 @@ const foods = [
     protein: 0,
     carbs: 0.5,
     fat: 0,
+    maxDailyQuantity: 800,
+    maxPerMealQuantity: 400,
   },
   {
     name: "Kashmiri Tea / Kashmiri Chai",
@@ -691,6 +823,8 @@ const foods = [
     protein: 3.5,
     carbs: 10,
     fat: 7,
+    maxDailyQuantity: 600,
+    maxPerMealQuantity: 400,
   },
   {
     name: "Sweet Lassi / Meethi Lassi",
@@ -701,6 +835,8 @@ const foods = [
     protein: 5,
     carbs: 28,
     fat: 7,
+    maxDailyQuantity: 500,
+    maxPerMealQuantity: 250,
   },
   {
     name: "Salty Lassi / Namkeen Lassi",
@@ -711,6 +847,8 @@ const foods = [
     protein: 5,
     carbs: 8,
     fat: 5,
+    maxDailyQuantity: 500,
+    maxPerMealQuantity: 250,
   },
   {
     name: "Mango Shake / Aam ka Shake",
@@ -721,6 +859,8 @@ const foods = [
     protein: 4,
     carbs: 42,
     fat: 9,
+    maxDailyQuantity: 500,
+    maxPerMealQuantity: 250,
   },
 ];
 

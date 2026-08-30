@@ -45,6 +45,14 @@ const foodSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Fat is required"],
   },
+  maxDailyQuantity: {
+    type: Number,
+    required: [true, "Max daily quantity is required"],
+  },
+  maxPerMealQuantity: {
+    type: Number,
+    required: [true, "Max per meal quantity is required"],
+  },
 });
 
 const Food = mongoose.model("Food", foodSchema);
