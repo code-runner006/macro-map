@@ -5,6 +5,7 @@ const authRoutes = require("./routes/authRoutes");
 const foodRoutes = require("./routes/foodRoutes");
 const userRoutes = require("./routes/userRoutes");
 const logRoutes = require("./routes/logRoutes");
+const mealplanRoutes = require("./routes/mealplanRoutes");
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/foods", foodRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/logs", logRoutes);
+app.use("/api/mealplan", mealplanRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "MacroMap API is running" });

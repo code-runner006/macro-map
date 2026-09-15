@@ -24,6 +24,10 @@ const userSchema = new mongoose.Schema(
       type: Number,
       required: [true, "Age is required"],
     },
+    gender: {
+      type: String,
+      enum: ["Male", "Female", "Prefer not to say"],
+    },
     weight: {
       type: Number,
       required: [true, "Weight is required"],

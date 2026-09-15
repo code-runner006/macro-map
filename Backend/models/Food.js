@@ -53,6 +53,21 @@ const foodSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Max per meal quantity is required"],
   },
+  mealRole: {
+    type: String,
+    required: [true, "Meal role is required"],
+    enum: [
+      "protein_primary",
+      "protein_support",
+      "carb_staple",
+      "breakfast_staple",
+      "vegetable",
+      "fruit",
+      "fat_condiment",
+      "beverage",
+      "snack",
+    ],
+  },
 });
 
 const Food = mongoose.model("Food", foodSchema);
