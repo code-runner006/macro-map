@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const BlacklistedToken = require("../models/BlacklistedToken");
 const calculateBMI = require("../utils/bmiCalculator");
 const jwt = require("jsonwebtoken");
 
@@ -82,6 +83,18 @@ const login = async (req, res) => {
 };
 
 const logout = async (req, res) => {
+  const token = req.cookies.jwt;
+
+  if (token) {
+    const decoded = jwt.decode(token);
+    if (decoded && decoded.exp) {
+      await BlacklistedToken.create({
+        token,
+        expiresAt: new Date(decoded.exp * 1000),
+      });
+    }
+  }
+
   res.cookie("jwt", "loggedout", {
     httpOnly: true,
     maxAge: 1000,
