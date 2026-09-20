@@ -50,6 +50,7 @@ const generatePlan = async (req, res) => {
     message: "Meal plan generated successfully",
     plan,
     warning: result.warning,
+    coverage: result.coverage,
   });
 };
 

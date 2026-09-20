@@ -23,6 +23,10 @@ const plannedMealSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  mealType: {
+    type: String,
+    enum: ["breakfast", "lunch", "snack", "dinner"],
+  },
   items: [mealItemSchema],
   mealNutrition: {
     calories: { type: Number, default: 0 },
